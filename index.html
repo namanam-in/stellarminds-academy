@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stellar Minds Academy | Live Science Learning</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Open Sans', sans-serif;
+background:#0b1c2d;
+color:#ffffff;
+line-height:1.6;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#0b1c2d;
+position:fixed;
+width:100%;
+z-index:1000;
+}
+
+.logo{
+font-family:'Montserrat', sans-serif;
+font-size:22px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+nav a{
+color:#ffffff;
+text-decoration:none;
+margin-left:30px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#3bd6ff;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 10%;
+background:linear-gradient(rgba(11,28,45,0.85), rgba(11,28,45,0.85)), url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa') center/cover no-repeat;
+}
+
+.hero h1{
+font-family:'Montserrat', sans-serif;
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+max-width:700px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:#3bd6ff;
+color:#0b1c2d;
+text-decoration:none;
+font-weight:600;
+border-radius:30px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#ffffff;
+}
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-family:'Montserrat', sans-serif;
+font-size:32px;
+margin-bottom:50px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+background:#122b45;
+padding:30px;
+border-radius:12px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+font-family:'Montserrat', sans-serif;
+margin-bottom:15px;
+}
+
+.about{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:280px;
+border-radius:12px;
+}
+
+.footer{
+background:#081521;
+text-align:center;
+padding:30px;
+font-size:14px;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:32px;
+}
+header{
+flex-direction:column;
+}
+nav{
+margin-top:10px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Stellar Minds Academy</div>
+<nav>
+<a href="#courses">Courses</a>
+<a href="#about">Mentors</a>
+<a href="#approach">Approach</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Learn Science From Real Researchers</h1>
+<p>Live online Physics, Chemistry & Biology classes led by PhD Astrophysics scholars. Concept-driven learning from school foundations to advanced physics.</p>
+<a href="#contact" class="btn">Book Free Live Demo</a>
+</section>
+
+<section id="courses">
+<h2 class="section-title">Courses Offered</h2>
+<div class="cards">
+<div class="card">
+<h3>Class 9–10 Science</h3>
+<p>Strong conceptual foundation in Physics, Chemistry and Biology aligned with global school curricula.</p>
+</div>
+<div class="card">
+<h3>Class 11–12 Physics</h3>
+<p>Advanced conceptual understanding, numerical mastery and preparation for board & competitive exams.</p>
+</div>
+<div class="card">
+<h3>Advanced Physics & Competitive Prep</h3>
+<p>Deep problem solving, analytical thinking and preparation for IIT-JEE and other competitive examinations.</p>
+</div>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">Meet the Mentors</h2>
+<div class="about">
+<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Mentor">
+<div>
+<h3>Dr. [Mentor Name]</h3>
+<p>PhD in Astrophysics | Postdoctoral Researcher</p>
+<p>Specializes in simplifying complex scientific concepts and building deep conceptual clarity in physics and interdisciplinary sciences.</p>
+</div>
+</div>
+<br><br>
+<div class="about">
+<img src="https://images.unsplash.com/photo-1580894908361-967195033215" alt="Mentor">
+<div>
+<h3>Dr. [Mentor Name]</h3>
+<p>PhD in Astrophysics | Postdoctoral Researcher</p>
+<p>Focused on interactive live teaching, structured problem solving, and nurturing analytical thinking in students worldwide.</p>
+</div>
+</div>
+</section>
+
+<section id="approach">
+<h2 class="section-title">Our Teaching Approach</h2>
+<div class="cards">
+<div class="card">
+<h3>Concept First</h3>
+<p>No rote learning. Strong emphasis on understanding fundamentals.</p>
+</div>
+<div class="card">
+<h3>Live Interactive Classes</h3>
+<p>Real-time discussion, doubt solving and guided problem solving.</p>
+</div>
+<div class="card">
+<h3>Structured Practice</h3>
+<p>Targeted assignments and mock sessions for mastery.</p>
+</div>
+<div class="card">
+<h3>Global Access</h3>
+<p>Flexible online sessions accessible worldwide.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">Book a Free Demo Class</h2>
+
+<form action="https://formsubmit.co/stellarminds.academy.in@gmail.com" method="POST" style="max-width:700px;margin:auto;display:flex;flex-direction:column;gap:20px;">
+
+<input type="hidden" name="_captcha" value="false">
+
+<input type="text" name="Student Full Name" placeholder="Student Full Name" required style="padding:12px;border-radius:8px;border:none;">
+
+<input type="email" name="Email Address" placeholder="Email Address" required style="padding:12px;border-radius:8px;border:none;">
+
+<input type="tel" name="Phone Number" placeholder="Phone / WhatsApp Number" required style="padding:12px;border-radius:8px;border:none;">
+
+<input type="text" name="Country" placeholder="Country" required style="padding:12px;border-radius:8px;border:none;">
+
+<input type="text" name="Current Class / Grade" placeholder="Current Class / Grade" required style="padding:12px;border-radius:8px;border:none;">
+
+<select name="Subject Interest" id="subjectSelect" required style="padding:12px;border-radius:8px;border:none;" onchange="toggleOtherField()">
+<option value="">Select Subject Interest</option>
+<option>Class 9–10 Science</option>
+<option>Class 11–12 Physics</option>
+<option>IIT-JEE / Competitive Exams</option>
+<option>Advanced Physics</option>
+<option value="Other">Others</option>
+</select>
+
+<input type="text" name="Please Specify" id="otherField" placeholder="Please specify subject interest" style="padding:12px;border-radius:8px;border:none;display:none;">
+
+<textarea name="Message" placeholder="Tell us about your learning goals or concerns..." rows="5" style="padding:12px;border-radius:8px;border:none;"></textarea>
+
+<button type="submit" class="btn" style="border:none;cursor:pointer;">Submit Enquiry</button>
+
+</form>
+</section>
+
+<script>
+function toggleOtherField() {
+var select = document.getElementById("subjectSelect");
+var otherField = document.getElementById("otherField");
+
+if (select.value === "Other") {
+otherField.style.display = "block";
+otherField.required = true;
+} else {
+otherField.style.display = "none";
+otherField.required = false;
+}
+}
+</script>
+
+<div class="footer">
+© 2026 Stellar Minds Academy | Live Online Science Education
+</div>
+
+</body>
+</html>
