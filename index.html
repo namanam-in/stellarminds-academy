@@ -289,6 +289,7 @@
 
   .hero {
     padding-top: 74px;
+    padding-bottom: 44px;
   }
 
   .hero-grid {
@@ -444,6 +445,10 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     margin-top: 28px;
+  }
+
+  #programs {
+    padding-top: 52px;
   }
 
   .metric,
@@ -836,7 +841,7 @@
 
   @media (max-width: 760px) {
     section {
-      padding: 72px 16px;
+      padding: 60px 16px;
     }
 
     .nav-shell,
@@ -865,14 +870,36 @@
 
     .nav-links {
       flex-wrap: wrap;
-      gap: 12px 18px;
+      gap: 10px 12px;
       font-size: 0.92rem;
+    }
+
+    .nav-links a {
+      padding: 8px 12px;
+      border: 1px solid rgba(173, 203, 255, 0.1);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.03);
+      text-align: center;
+    }
+
+    .nav-cta {
+      padding: 12px 18px;
+    }
+
+    .hero {
+      padding-top: 34px;
+      padding-bottom: 20px;
+    }
+
+    .hero-grid {
+      gap: 22px;
     }
 
     .hero-copy h1 {
       max-width: none;
       font-size: clamp(2.3rem, 12vw, 3.5rem);
       line-height: 1.02;
+      margin: 18px 0 14px;
     }
 
     .hero-copy p,
@@ -890,6 +917,7 @@
     .resource-actions {
       flex-direction: column;
       align-items: stretch;
+      margin: 22px 0;
     }
 
     .hero-actions a,
@@ -913,6 +941,20 @@
       font-size: clamp(1.9rem, 9vw, 2.7rem);
     }
 
+    .section-heading {
+      margin-bottom: 24px;
+    }
+
+    .program-grid,
+    .resource-grid,
+    .values-grid,
+    .path-grid,
+    .quote-grid,
+    .faq-grid,
+    .mentor-layout {
+      gap: 14px;
+    }
+
     .metric,
     .program-card,
     .resource-card,
@@ -926,9 +968,52 @@
       padding: 22px;
     }
 
+    .metrics {
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .metric strong {
+      font-size: 1.5rem;
+    }
+
+    .hero-panel {
+      padding: 20px;
+      border-radius: 24px;
+    }
+
+    .schedule-chip {
+      margin-bottom: 14px;
+    }
+
+    .orbit {
+      aspect-ratio: auto;
+      min-height: 300px;
+      border-radius: 22px;
+    }
+
+    .orbit-card {
+      width: 100%;
+      max-width: none;
+      padding: 20px;
+    }
+
+    .resource-meta {
+      gap: 8px;
+      margin: 12px 0 16px;
+    }
+
+    .contact-shell {
+      gap: 16px;
+    }
+
     .contact-card,
     .contact-form {
       padding: 22px;
+    }
+
+    #programs {
+      padding-top: 24px;
     }
   }
 
@@ -974,20 +1059,13 @@
       gap: 10px 14px;
     }
 
-    .nav-links a {
-      padding: 8px 10px;
-      border: 1px solid rgba(173, 203, 255, 0.1);
-      border-radius: 999px;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.03);
-    }
-
     .hero {
-      padding-top: 28px;
+      padding-top: 22px;
+      padding-bottom: 8px;
     }
 
     .hero-grid {
-      gap: 22px;
+      gap: 18px;
     }
 
     .hero-panel {
@@ -1009,6 +1087,31 @@
     .metrics {
       grid-template-columns: 1fr;
       gap: 12px;
+    }
+
+    .hero-copy p,
+    .section-heading p {
+      font-size: 0.94rem;
+    }
+
+    .program-card h3,
+    .value-card h3,
+    .path-card h3,
+    .mentor-card h3,
+    .quote-card h3,
+    .contact-card h3 {
+      font-size: 1.16rem;
+    }
+
+    .resource-actions a,
+    .hero-actions a,
+    .nav-cta,
+    .contact-form button {
+      padding: 12px 16px;
+    }
+
+    #programs {
+      padding-top: 16px;
     }
 
     .form-grid {
